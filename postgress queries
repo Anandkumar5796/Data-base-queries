@@ -1,0 +1,83 @@
+create user dev with encrypted password 'Validus123';
+
+grant all privileges on database validus_pay_prod to dev
+
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO dev
+
+
+
+
+
+
+create user dev with encrypted password 'Validus123';
+
+grant all privileges on database validus_pay_prod to dev
+
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO dev
+
+ALTER USER dev VALID UNTIL 'Jan 31 2025';
+
+ALTER USER dev WITH CONNECTION LIMIT 5;
+
+
+
+
+
+
+
+
+create user devteam with encrypted password 'Validus123';
+
+grant all privileges on database validus_neobank_prod to devteam
+
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO devteam
+
+ALTER USER devteam VALID UNTIL 'Jan 31 2025';
+
+ALTER USER devteam WITH CONNECTION LIMIT 5;
+
+
+
+
+ALTER DEFAULT PRIVILEGES FOR ROLE creator IN SCHEMA public GRANT SELECT ON TABLES TO devteam;
+
+
+
+GRANT ALL PRIVILEGES ON TABLE bankcard TO devteam;
+
+
+
+GRANT SELECT ON ALL TABLES IN SCHEMA validus_neobank_prod TO devteam
+
+
+ivan_read_only
+
+ALTER USER ivan_read_only VALID UNTIL 'Jan 31 2025';
+
+
+
+
+
+ALTER USER ivan_read_only WITH PASSWORD 'U8Ne7w35Lx';
+
+
+
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO ivan_read_only
+
+
+
+
+
+
+
+
+
+YaObNymtUkaDy75c
+
+
+
+
+
+
+
+
